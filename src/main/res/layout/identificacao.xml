@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Identificacao">
+
+    <TextView
+        android:id="@+id/txtArea"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="694dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/degrade"
+        android:text="Área Afetada"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtProtecao"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/degrade"
+        android:text="Caixa de Inspeção e Proteção"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/degrade"
+        android:text="Identificação do Registro"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/entArea"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/txtArea"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/regEnt"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/txtRegistro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/mapas"
+        android:layout_width="898dp"
+        android:layout_height="429dp"
+        android:layout_below="@+id/entArea"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="1dp" />
+
+    <ListView
+        android:id="@+id/entID"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_below="@+id/regEnt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <ListView
+        android:id="@+id/entProt"
+        android:layout_width="match_parent"
+        android:layout_height="378dp"
+        android:layout_below="@+id/txtProtecao"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="38dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/entProt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-687dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:background="?attr/actionModeCloseDrawable" />
+
+</RelativeLayout>

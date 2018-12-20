@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicial">
+
+    <TextView
+        android:id="@+id/txtManobra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="479dp"
+        android:text="MANOBRA"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="884dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="435dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="708dp" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:text="PESQUISAR"
+        tools:layout_editor_absoluteX="406dp"
+        tools:layout_editor_absoluteY="837dp" />
+
+    <EditText
+        android:id="@+id/campoEntrada"
+        android:layout_width="879dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="380dp"
+        android:ems="10"
+        android:hint="Digite o Endereço"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnApagar"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/campoEntrada"
+        android:layout_alignBottom="@+id/campoEntrada"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="7dp"
+        android:background="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="556dp"
+        android:layout_height="402dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/logomarca" />
+
+    <Button
+        android:id="@+id/gerarBD"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="387dp"
+        android:layout_marginLeft="387dp"
+        android:layout_marginTop="31dp"
+        android:text="." />
+
+</RelativeLayout>
